@@ -20,6 +20,142 @@
 	<script src="assets/js/html5shiv.js"></script>
 	<script src="assets/js/respond.min.js"></script>
 	<![endif]-->
+
+
+<!--DISEÑO DE LA LISTA ENCONTRADA EN "HORARIOS DE CLASE"-->
+
+<style>
+    #recursos ul li a {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(45deg, #00a8ff, #007bff);
+      transition: background 0.3s ease-in-out;
+    }
+
+    #recursos ul li a:hover {
+      background: linear-gradient(45deg, #007bff, #00a8ff);
+    }
+
+/*  DISEÑO DE LOS BOTONES DE LA LISTA DE DESCARGA DE HORAIOS  */
+
+    .custom-btn {
+      width: 100%;
+      height: auto;
+      color: #fff;
+      border-radius: 5px;
+      padding: 10px 25px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 500;
+      background: transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      display: block;
+      text-align: center;
+      box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+      outline: none;
+      text-decoration: none;
+      margin: 10px 0;
+    }
+
+    .btn-6 {
+      background: rgb(247, 150, 192);
+      background: radial-gradient(circle, rgba(247, 150, 192, 1) 0%, rgba(118, 174, 241, 1) 100%);
+      line-height: 42px;
+      border: none;
+    } 
+
+    .btn-6 span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .btn-6:before,
+    .btn-6:after {
+      position: absolute;
+      content: "";
+      height: 0%;
+      width: 1px;
+      box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1),
+        -4px -4px 5px 0px rgba(255, 255, 255, 1),
+        7px 7px 20px 0px rgba(0, 0, 0, .4),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+    }
+
+    .btn-6:before {
+      right: 0;
+      top: 0;
+      transition: all 500ms ease;
+    }
+
+    .btn-6:after {
+      left: 0;
+      bottom: 0;
+      transition: all 500ms ease;
+    }
+
+    .btn-6:hover {
+      background: transparent;
+      color: #76aef1;
+      box-shadow: none;
+    }
+
+    .btn-6:hover:before {
+      transition: all 500ms ease;
+      height: 100%;
+    }
+
+    .btn-6:hover:after {
+      transition: all 500ms ease;
+      height: 100%;
+    }
+
+    .btn-6 span:before,
+    .btn-6 span:after {
+      position: absolute;
+      content: "";
+      box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1),
+        -4px -4px 5px 0px rgba(255, 255, 255, 1),
+        7px 7px 20px 0px rgba(0, 0, 0, .4),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+    }
+
+    .btn-6 span:before {
+      left: 0;
+      top: 0;
+      width: 0%;
+      height: .5px;
+      transition: all 500ms ease;
+    }
+
+    .btn-6 span:after {
+      right: 0;
+      bottom: 0;
+      width: 0%;
+      height: .5px;
+      transition: all 500ms ease;
+    }
+
+    .btn-6 span:hover:before {
+      width: 100%;
+    }
+
+    .btn-6 span:hover:after {
+      width: 100%;
+    }
+  </style>
+
+
+
 </head>
 
 <body>
@@ -61,169 +197,55 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-8">
-					<h1>Portfolio</h1>
+					<h1>RECURSOS</h1>
 				</div>
 			</div>
 		</div>
 	</header>
 
 	<!-- container -->
-	<section class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<section id="portfolio" class="page-section section appear clearfix">
-					<br />
-					<br />
-					<p>
-						At lorem Ipsum available, but the majority have suffered alteration in some form by injected huffered altehe majority have suffered alteration in some form by injected huffered alteration in some form by injected humour.uffered alteration in some form by injected h
-					<br />
-						<br />
-					</p>
 
-
-					<div class="row">
-						<nav id="filter" class="col-md-12 text-center">
-							<ul>
-								<li><a href="#" class="current btn-theme btn-small" data-filter="*">All</a></li>
-								<li><a href="#" class="btn-theme btn-small" data-filter=".webdesign">Web Design</a></li>
-								<li><a href="#" class="btn-theme btn-small" data-filter=".photography">Photography</a></li>
-								<li><a href="#" class="btn-theme btn-small" data-filter=".print">Print</a></li>
-							</ul>
-						</nav>
-						<div class="col-md-12">
-							<div class="row">
-								<div class="portfolio-items isotopeWrapper clearfix" id="3">
-
-									<article class="col-sm-4 isotopeItem webdesign">
-										<div class="portfolio-item">
-											<img src="assets/images/portfolio/img1.jpg" alt="" />
-											<div class="portfolio-desc align-center">
-												<div class="folio-info">
-													<a href="assets/images/portfolio/img1.jpg" class="fancybox">
-														<h5>Project Title</h5>
-														<i class="fa fa-link fa-2x"></i></a>
-												</div>
-											</div>
-										</div>
-									</article>
-
-									<article class="col-sm-4 isotopeItem photography">
-										<div class="portfolio-item">
-											<img src="assets/images/portfolio/img2.jpg" alt="" />
-											<div class="portfolio-desc align-center">
-												<div class="folio-info">
-													<a href="assets/images/portfolio/img2.jpg" class="fancybox">
-														<h5>Project Title</h5>
-														<i class="fa fa-link fa-2x"></i></a>
-												</div>
-											</div>
-										</div>
-									</article>
-
-
-									<article class="col-sm-4 isotopeItem photography">
-										<div class="portfolio-item">
-											<img src="assets/images/portfolio/img3.jpg" alt="" />
-											<div class="portfolio-desc align-center">
-												<div class="folio-info">
-													<a href="assets/images/portfolio/img3.jpg" class="fancybox">
-														<h5>Project Title</h5>
-														<i class="fa fa-link fa-2x"></i></a>
-												</div>
-											</div>
-										</div>
-									</article>
-
-									<article class="col-sm-4 isotopeItem print">
-										<div class="portfolio-item">
-											<img src="assets/images/portfolio/img4.jpg" alt="" />
-											<div class="portfolio-desc align-center">
-												<div class="folio-info">
-													<a href="assets/images/portfolio/img4.jpg" class="fancybox">
-														<h5>Project Title</h5>
-														<i class="fa fa-link fa-2x"></i></a>
-												</div>
-											</div>
-										</div>
-									</article>
-
-									<article class="col-sm-4 isotopeItem photography">
-										<div class="portfolio-item">
-											<img src="assets/images/portfolio/img5.jpg" alt="" />
-											<div class="portfolio-desc align-center">
-												<div class="folio-info">
-													<a href="assets/images/portfolio/img5.jpg" class="fancybox">
-														<h5>Project Title</h5>
-														<i class="fa fa-link fa-2x"></i></a>
-												</div>
-											</div>
-										</div>
-									</article>
-
-									<article class="col-sm-4 isotopeItem webdesign">
-										<div class="portfolio-item">
-											<img src="assets/images/portfolio/img6.jpg" alt="" />
-											<div class="portfolio-desc align-center">
-												<div class="folio-info">
-													<a href="assets/images/portfolio/img6.jpg" class="fancybox">
-														<h5>Project Title</h5>
-														<i class="fa fa-link fa-2x"></i></a>
-												</div>
-											</div>
-										</div>
-									</article>
-
-									<article class="col-sm-4 isotopeItem print">
-										<div class="portfolio-item">
-											<img src="assets/images/portfolio/img7.jpg" alt="" />
-											<div class="portfolio-desc align-center">
-												<div class="folio-info">
-													<a href="images/portfolio/img7.jpg" class="fancybox">
-														<h5>Project Title</h5>
-														<i class="fa fa-link fa-2x"></i></a>
-												</div>
-											</div>
-										</div>
-									</article>
-
-									<article class="col-sm-4 isotopeItem photography">
-										<div class="portfolio-item">
-											<img src="assets/images/portfolio/img8.jpg" alt="" />
-											<div class="portfolio-desc align-center">
-												<div class="folio-info">
-													<a href="images/portfolio/img8.jpg" class="fancybox">
-														<h5>Project Title</h5>
-														<i class="fa fa-link fa-2x"></i></a>
-												</div>
-											</div>
-										</div>
-									</article>
-
-									<article class="col-sm-4 isotopeItem print">
-										<div class="portfolio-item">
-											<img src="assets/images/portfolio/img9.jpg" alt="" />
-											<div class="portfolio-desc align-center">
-												<div class="folio-info">
-													<a href="images/portfolio/img9.jpg" class="fancybox">
-														<h5>Project Title</h5>
-														<i class="fa fa-link fa-2x"></i></a>
-												</div>
-											</div>
-										</div>
-									</article>
-								</div>
-
-							</div>
-
-
-						</div>
-					</div>
-
-				</section>
+	<section id="recursos" class="container">
+		<div class="container">
+			<div class="heading text-center">
+			  <!-- Heading -->
+			  <h2>Horarios de clase</h2>
+			  <h3>Elija el horario que desea descargar:</h3>
 			</div>
-		</div>
+			<div class="row">
+			  <div class="col-md-4">
+				<ul class="list-unstyled custom-button-list">
+				  <li><a href="#" download class="custom-btn btn-6"><span>Primero de básica - Descargar ahora</span></a></li>
+				  <li><a href="#" download class="custom-btn btn-6"><span>Segundo de básica - Descargar ahora</span></a></li>
+				  <li><a href="#" download class="custom-btn btn-6"><span>Tercero de básica - Descargar ahora</span></a></li>
+				  <li><a href="#" download class="custom-btn btn-6"><span>Cuarto de básica - Descargar ahora</span></a></li>
+				</ul>
+			  </div>
+			  <div class="col-md-4">
+				<ul class="list-unstyled custom-button-list">
+				  <li><a href="#" download class="custom-btn btn-6"><span>Quinto de básica - Descargar ahora</span></a></li>
+				  <li><a href="#" download class="custom-btn btn-6"><span>Sexto de básica - Descargar ahora</span></a></li>
+				  <li><a href="#" download class="custom-btn btn-6"><span>Séptimo de básica - Descargar ahora</span></a></li>
+				  <li><a href="#" download class="custom-btn btn-6"><span>Octavo de básica - Descargar ahora</span></a></li>
+				</ul>
+			  </div>
+			  <div class="col-md-4">
+				<ul class="list-unstyled custom-button-list">
+				  <li><a href="#" download class="custom-btn btn-6"><span>Noveno de básica - Descargar ahora</span></a></li>
+				  <li><a href="#" download class="custom-btn btn-6"><span>Décimo de básica - Descargar ahora</span></a></li>
+				  <li><a href="#" download class="custom-btn btn-6"><span>Primero de bachillerato - Descargar ahora</span></a>
+				  </li>
+				  <li><a href="#" download class="custom-btn btn-6"><span>Segundo de bachillerato - Descargar ahora</span></a>
+				  </li>
+				  <li><a href="#" download class="custom-btn btn-6"><span>Tercero de bachillerato - Descargar ahora</span></a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
 
 	</section>
+
 	<!-- /container -->
 
 	<footer id="footer">
