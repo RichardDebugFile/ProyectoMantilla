@@ -19,6 +19,9 @@
   <link rel="stylesheet" type="text/css" href="assets/css/da-slider.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
 
+  
+
+
   <style>
     .project-section .carousel-inner .carousel-item {
       height: 200px;
@@ -49,6 +52,18 @@
 </head>
 
 <body>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <a href="javascript:void(0)" class="float" id="whatsappButton">
+    <i class="fa-brands fa-whatsapp my-float"></i>
+  </a>
+
+  <script>document.getElementById('whatsappButton').addEventListener('click', function () {
+      var message = encodeURIComponent('Hola, me gustaría obtener más información.');
+      var whatsapp_url = "https://wa.me/593960051945?text=" + message;
+      window.open(whatsapp_url, '_blank');
+    });
+  </script>
   <!-- Fixed navbar -->
   <div class="navbar navbar-inverse">
     <div class="container">
@@ -248,13 +263,14 @@
           <h2 class="title-box_primary">Ubicación</h2>
           <h4>Dale click al mapa para abrir la ubicación</h4>
         </div>
-          <figure class="frame thumbnail alignnone clearfix">
-            <a href="https://www.google.com/maps/dir//PF58%2B324+Unidad+Educativa+Jorge+Mantilla+Ortega,+Av.+Morán+Valverde,+Quito+170146/@-0.2919418,-78.5412519,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x91d5989da062783d:0x98c6f838f802c6d4!2m2!1d-78.535043!2d-0.2923875?entry=ttu" target="_blank">
-              <p>
-                <img class="size-full" alt="usa" src="assets/images/croquismantilla.jpg" width="" height="197" />
-              </p>
-            </a>
-          </figure>
+        <figure class="frame thumbnail alignnone clearfix">
+          <a href="https://www.google.com/maps/dir//PF58%2B324+Unidad+Educativa+Jorge+Mantilla+Ortega,+Av.+Morán+Valverde,+Quito+170146/@-0.2919418,-78.5412519,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x91d5989da062783d:0x98c6f838f802c6d4!2m2!1d-78.535043!2d-0.2923875?entry=ttu"
+            target="_blank">
+            <p>
+              <img class="size-full" alt="usa" src="assets/images/croquismantilla.jpg" width="" height="197" />
+            </p>
+          </a>
+        </figure>
       </div>
     </div>
   </section>

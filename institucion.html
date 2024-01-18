@@ -1,300 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Actualiza la descripción para reflejar el contenido de la sección de la institución -->
-    <meta
-      name="description"
-      content="Información institucional de la Unidad Educativa Jorge Mantilla Ortega - Autoridades, Departamentos, Personal Docente, Misión, Visión e Ideario."
-    />
-    <!-- Puedes cambiar el autor por el nombre de tu organización o dejarlo en blanco si no aplica -->
-    <meta name="author" content="Unidad Educativa Jorge Mantilla Ortega" />
-    <!-- Actualiza el título para reflejar el propósito de la página -->
-    <title>
-      Unidad Educativa Jorge Mantilla Ortega - Sección Institucional
-    </title>
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/images/logo_institucion.png"
-    />
-    <link
-      rel="stylesheet"
-      media="screen"
-      href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
-    />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    <!-- Estilos personalizados para nuestra plantilla -->
-    <link
-      rel="stylesheet"
-      href="assets/css/bootstrap-theme.css"
-      media="screen"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- HTML5 shim y Respond.js para soporte de HTML5 en IE8 -->
-    <!--[if lt IE 9]>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Actualiza la descripción para reflejar el contenido de la sección de la institución -->
+  <meta name="description"
+    content="Información institucional de la Unidad Educativa Jorge Mantilla Ortega - Autoridades, Departamentos, Personal Docente, Misión, Visión e Ideario." />
+  <!-- Puedes cambiar el autor por el nombre de tu organización o dejarlo en blanco si no aplica -->
+  <meta name="author" content="Unidad Educativa Jorge Mantilla Ortega" />
+  <!-- Actualiza el título para reflejar el propósito de la página -->
+  <title>
+    Unidad Educativa Jorge Mantilla Ortega - Sección Institucional
+  </title>
+  <link rel="icon" type="image/png" href="assets/images/logo_institucion.png" />
+  <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+  <!-- Estilos personalizados para nuestra plantilla -->
+  <link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <!-- HTML5 shim y Respond.js para soporte de HTML5 en IE8 -->
+  <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.js"></script>
       <script src="assets/js/respond.min.js"></script>
     <![endif]-->
-  </head>
+</head>
 
-  <body>
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-inverse">
-      <div class="container">
-        <div class="navbar-header">
-          <!-- Button for smallest screens -->
-          <button
-            type="button"
-            class="navbar-toggle"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-          >
-            <span class="icon-bar"></span><span class="icon-bar"></span
-            ><span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">
-            <img src="assets/images/logo.png" alt="Techro HTML5 template"
-          /></a>
+<body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <a href="javascript:void(0)" class="float" id="whatsappButton">
+    <i class="fa-brands fa-whatsapp my-float"></i>
+  </a>
+
+  <script>document.getElementById('whatsappButton').addEventListener('click', function () {
+      var message = encodeURIComponent('Hola, me gustaría obtener más información.');
+      var whatsapp_url = "https://wa.me/593960051945?text=" + message;
+      window.open(whatsapp_url, '_blank');
+    });
+  </script>
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- Button for smallest screens -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.png" alt="Techro HTML5 template" /></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav pull-right mainNav">
+          <li><a href="index.html">Inicio</a></li>
+          <li class="active"><a href="institucion.html">Institución</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Infraestructura <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="instalaciones.html">Instalaciones</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+            </ul>
+          </li>
+          <li><a href="oferta.html">Oferta Educativa</a></li>
+          <li><a href="recursos.html">Recursos</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+  <!-- /.navbar -->
+
+  <header id="head" class="secondary">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <h1>Institución</h1>
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav pull-right mainNav">
-            <li><a href="index.html">Inicio</a></li>
-            <li class="active"><a href="institucion.html">Institución</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                >Infraestructura <b class="caret"></b
-              ></a>
-              <ul class="dropdown-menu">
-                <li><a href="instalaciones.html">Instalaciones</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-              </ul>
-            </li>
-            <li><a href="oferta.html">Oferta Educativa</a></li>
-            <li><a href="recursos.html">Recursos</a></li>
-            <li><a href="noticias.html">Noticias</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-          </ul>
-        </div>
-        <!--/.nav-collapse -->
       </div>
     </div>
-    <!-- /.navbar -->
-
-    <header id="head" class="secondary">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8">
-            <h1>Institución</h1>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- /container -->
-    <!-- /container -->
-    <section class="team-content">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h3>Nuestro Equipo Directivo</h3>
-            <p>
-              Conoce al equipo de liderazgo de la Unidad Educativa Jorge
-              Mantilla Ortega, comprometidos con la excelencia educativa y el
-              desarrollo integral de nuestros estudiantes.
-            </p>
-            <br />
-          </div>
-        </div>
-        <div class="row">
-          <!-- Rector -->
-          <div class="col-md-3 col-sm-6 col-xs-6">
-            <div class="team-member">
-              <div class="member-img">
-                <img
-                  class="img-responsive"
-                  src="assets/images/photo-1.jpg"
-                  alt="Rector"
-                />
-              </div>
-              <h4>Rector</h4>
-              <span class="pos">Rector</span>
-            </div>
-          </div>
-          <!-- Vicerrector -->
-          <div class="col-md-3 col-sm-6 col-xs-6">
-            <div class="team-member pDark">
-              <div class="member-img">
-                <img
-                  class="img-responsive"
-                  src="assets/images/photo-2.jpg"
-                  alt="Vicerrector"
-                />
-              </div>
-              <h4>Vicerrector</h4>
-              <span class="pos">Vicerrector</span>
-            </div>
-          </div>
-          <!-- Director Académico -->
-          <div class="col-md-3 col-sm-6 col-xs-6">
-            <div class="team-member pDark">
-              <div class="member-img">
-                <img
-                  class="img-responsive"
-                  src="assets/images/photo-3.jpg"
-                  alt="Director Académico"
-                />
-              </div>
-              <h4>Director Académico</h4>
-              <span class="pos">Director Académico</span>
-            </div>
-          </div>
-          <!-- Coordinador General -->
-          <div class="col-md-3 col-sm-6 col-xs-6">
-            <div class="team-member pDark">
-              <div class="member-img">
-                <img
-                  class="img-responsive"
-                  src="assets/images/photo-4.jpg"
-                  alt="Coordinador General"
-                />
-              </div>
-              <h4>Coordinador General</h4>
-              <span class="pos">Coordinador General</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- container -->
-    <section class="container">
+  </header>
+  <!-- /container -->
+  <!-- /container -->
+  <section class="team-content">
+    <div class="container">
       <div class="row">
-        <!-- main content -->
-        <section class="col-sm-8 maincontent">
-          <h3>Departamentos de la Institución</h3>
+        <div class="col-md-12">
+          <h3>Nuestro Equipo Directivo</h3>
           <p>
-            <img
-              src="assets/images/departamento.jpg"
-              alt=""
-              class="img-rounded pull-right"
-              width="300"
-            />
-            En la Unidad Educativa Jorge Mantilla Ortega, contamos con una
-            variedad de departamentos enfocados en brindar una educación
-            integral y de calidad. Cada departamento desempeña un papel vital en
-            el funcionamiento y desarrollo de nuestra institución.
+            Conoce al equipo de liderazgo de la Unidad Educativa Jorge
+            Mantilla Ortega, comprometidos con la excelencia educativa y el
+            desarrollo integral de nuestros estudiantes.
           </p>
-          <h4>Departamento Académico</h4>
-          <p>
-            El Departamento Académico se encarga de la planificación y
-            desarrollo curricular, asegurando que los programas educativos
-            cumplan con los estándares de calidad y relevancia para nuestros
-            estudiantes.
-          </p>
-          <h4>Departamento de Ciencias</h4>
-          <p>
-            Enfocado en fomentar el pensamiento crítico y el amor por la
-            investigación, el Departamento de Ciencias imparte conocimientos en
-            física, química, biología y más, utilizando métodos de enseñanza
-            innovadores.
-          </p>
-          <h4>Departamento de Matemáticas</h4>
-          <p>
-            Este departamento se dedica a la enseñanza de matemáticas,
-            promoviendo habilidades analíticas y de resolución de problemas a
-            través de un enfoque práctico y aplicado.
-          </p>
-          <h4>Departamento de Artes</h4>
-          <p>
-            El Departamento de Artes fomenta la creatividad y la expresión
-            personal a través de diversas disciplinas artísticas como la música,
-            las artes visuales y el teatro.
-          </p>
-          <h4>Departamento de Educación Física</h4>
-          <p>
-            Este departamento promueve un estilo de vida saludable y activo,
-            enfatizando en la importancia del ejercicio físico, el deporte y la
-            salud mental y emocional.
-          </p>
-        </section>
-
-        <!-- /main -->
-
-        <!-- Sidebar -->
-        <aside class="col-sm-4 sidebar sidebar-right">
-          <!-- Panel de Noticias -->
-          <div class="panel">
-            <h4></h4>
-            <ul class="list-unstyled list-spaces">
-              <!-- Contenido de noticias aquí -->
-            </ul>
-          </div>
-
-          <!-- Panel de Misión y Visión -->
-          <div class="panel">
-            <h4>Misión y Visión</h4>
-            <p>
-              <strong>Misión:</strong> Formar estudiantes integrales, críticos y
-              comprometidos con la sociedad, a través de una educación inclusiva
-              y de calidad, que promueva valores, habilidades y conocimientos
-              para enfrentar los desafíos del futuro.
-            </p>
-            <p>
-              <strong>Visión:</strong> Ser una institución educativa líder y
-              referente a nivel nacional e internacional, reconocida por su
-              excelencia académica, innovación y contribución al desarrollo
-              sostenible y al bienestar de la comunidad.
-            </p>
-          </div>
-        </aside>
-        <!-- /Sidebar -->
+          <br />
+        </div>
       </div>
-    </section>
+      <div class="row">
+        <!-- Rector -->
+        <div class="col-md-3 col-sm-6 col-xs-6">
+          <div class="team-member">
+            <div class="member-img">
+              <img class="img-responsive" src="assets/images/photo-1.jpg" alt="Rector" />
+            </div>
+            <h4>Rector</h4>
+            <span class="pos">Rector</span>
+          </div>
+        </div>
+        <!-- Vicerrector -->
+        <div class="col-md-3 col-sm-6 col-xs-6">
+          <div class="team-member pDark">
+            <div class="member-img">
+              <img class="img-responsive" src="assets/images/photo-2.jpg" alt="Vicerrector" />
+            </div>
+            <h4>Vicerrector</h4>
+            <span class="pos">Vicerrector</span>
+          </div>
+        </div>
+        <!-- Director Académico -->
+        <div class="col-md-3 col-sm-6 col-xs-6">
+          <div class="team-member pDark">
+            <div class="member-img">
+              <img class="img-responsive" src="assets/images/photo-3.jpg" alt="Director Académico" />
+            </div>
+            <h4>Director Académico</h4>
+            <span class="pos">Director Académico</span>
+          </div>
+        </div>
+        <!-- Coordinador General -->
+        <div class="col-md-3 col-sm-6 col-xs-6">
+          <div class="team-member pDark">
+            <div class="member-img">
+              <img class="img-responsive" src="assets/images/photo-4.jpg" alt="Coordinador General" />
+            </div>
+            <h4>Coordinador General</h4>
+            <span class="pos">Coordinador General</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer id="footer">
+  <!-- container -->
+  <section class="container">
+    <div class="row">
+      <!-- main content -->
+      <section class="col-sm-8 maincontent">
+        <h3>Departamentos de la Institución</h3>
+        <p>
+          <img src="assets/images/departamento.jpg" alt="" class="img-rounded pull-right" width="300" />
+          En la Unidad Educativa Jorge Mantilla Ortega, contamos con una
+          variedad de departamentos enfocados en brindar una educación
+          integral y de calidad. Cada departamento desempeña un papel vital en
+          el funcionamiento y desarrollo de nuestra institución.
+        </p>
+        <h4>Departamento Académico</h4>
+        <p>
+          El Departamento Académico se encarga de la planificación y
+          desarrollo curricular, asegurando que los programas educativos
+          cumplan con los estándares de calidad y relevancia para nuestros
+          estudiantes.
+        </p>
+        <h4>Departamento de Ciencias</h4>
+        <p>
+          Enfocado en fomentar el pensamiento crítico y el amor por la
+          investigación, el Departamento de Ciencias imparte conocimientos en
+          física, química, biología y más, utilizando métodos de enseñanza
+          innovadores.
+        </p>
+        <h4>Departamento de Matemáticas</h4>
+        <p>
+          Este departamento se dedica a la enseñanza de matemáticas,
+          promoviendo habilidades analíticas y de resolución de problemas a
+          través de un enfoque práctico y aplicado.
+        </p>
+        <h4>Departamento de Artes</h4>
+        <p>
+          El Departamento de Artes fomenta la creatividad y la expresión
+          personal a través de diversas disciplinas artísticas como la música,
+          las artes visuales y el teatro.
+        </p>
+        <h4>Departamento de Educación Física</h4>
+        <p>
+          Este departamento promueve un estilo de vida saludable y activo,
+          enfatizando en la importancia del ejercicio físico, el deporte y la
+          salud mental y emocional.
+        </p>
+      </section>
+
+      <!-- /main -->
+
+      <!-- Sidebar -->
+      <aside class="col-sm-4 sidebar sidebar-right">
+        <!-- Panel de Noticias -->
+        <div class="panel">
+          <h4></h4>
+          <ul class="list-unstyled list-spaces">
+            <!-- Contenido de noticias aquí -->
+          </ul>
+        </div>
+
+        <!-- Panel de Misión y Visión -->
+        <div class="panel">
+          <h4>Misión y Visión</h4>
+          <p>
+            <strong>Misión:</strong> Formar estudiantes integrales, críticos y
+            comprometidos con la sociedad, a través de una educación inclusiva
+            y de calidad, que promueva valores, habilidades y conocimientos
+            para enfrentar los desafíos del futuro.
+          </p>
+          <p>
+            <strong>Visión:</strong> Ser una institución educativa líder y
+            referente a nivel nacional e internacional, reconocida por su
+            excelencia académica, innovación y contribución al desarrollo
+            sostenible y al bienestar de la comunidad.
+          </p>
+        </div>
+      </aside>
+      <!-- /Sidebar -->
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="social text-center">
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-dribbble"></i></a>
+        <a href="#"><i class="fa fa-flickr"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+      </div>
+
+      <div class="clear"></div>
+      <!--CLEAR FLOATS-->
+    </div>
+    <div class="footer2">
       <div class="container">
-        <div class="social text-center">
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-dribbble"></i></a>
-          <a href="#"><i class="fa fa-flickr"></i></a>
-          <a href="#"><i class="fa fa-github"></i></a>
-        </div>
-
-        <div class="clear"></div>
-        <!--CLEAR FLOATS-->
-      </div>
-      <div class="footer2">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 panel">
-              <div class="panel-body">
-                <p class="simplenav">
-                  <a href="index.html">Inicio</a> |
-                  <a href="oferta.html">Oferta Educativa</a> |
-                  <a href="recursos.html">Recursos</a> |
-                  <a href="noticias.html">Noticias</a> |
-                  <a href="contact.html">Contacto</a>
-                </p>
-              </div>
-            </div>
-
-            <div class="col-md-6 panel">
-              <div class="panel-body">
-                <p class="text-right">Instituto Universitario Vida Nueva</p>
-              </div>
+        <div class="row">
+          <div class="col-md-6 panel">
+            <div class="panel-body">
+              <p class="simplenav">
+                <a href="index.html">Inicio</a> |
+                <a href="oferta.html">Oferta Educativa</a> |
+                <a href="recursos.html">Recursos</a> |
+                <a href="noticias.html">Noticias</a> |
+                <a href="contact.html">Contacto</a>
+              </p>
             </div>
           </div>
-          <!-- /row of panels -->
-        </div>
-      </div>
-    </footer>
 
-    <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script src="assets/js/custom.js"></script>
-  </body>
+          <div class="col-md-6 panel">
+            <div class="panel-body">
+              <p class="text-right">Instituto Universitario Vida Nueva</p>
+            </div>
+          </div>
+        </div>
+        <!-- /row of panels -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+
 </html>
