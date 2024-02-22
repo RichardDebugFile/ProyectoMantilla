@@ -278,74 +278,12 @@
   <section class="news-box">
     <div class="container">
       <h2><span>Últimas Noticias</span></h2>
-      <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-          <div class="newsBox">
-            <a href="#">
-              <div class="thumbnail">
-                <figure>
-                  <time datetime="2014-01-01">25 Nov, 2014</time><img src="assets/images/news1.jpg" alt="" />
-                </figure>
-                <div class="caption maxheight2">
-                  <div class="box_inner">
-                    Lorem ipsum dolor sit amet conse ctetu eiusmod.
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-          <div class="newsBox">
-            <a href="#">
-              <div class="thumbnail">
-                <figure>
-                  <time datetime="2014-01-01">25 Nov, 2014</time><img src="assets/images/news2.jpg" alt="" />
-                </figure>
-                <div class="caption maxheight2">
-                  <div class="box_inner">
-                    Lorem ipsumulum aenean noummy endrerit mauris.
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-          <div class="newsBox">
-            <a href="#">
-              <div class="thumbnail">
-                <figure>
-                  <time datetime="2014-01-01">25 Nov, 2014</time><img src="assets/images/news3.jpg" alt="" />
-                </figure>
-                <div class="caption maxheight2">
-                  <div class="box_inner">
-                    Pariatur excepteur sint occaummy endrerit mauris.
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-          <div class="newsBox">
-            <a href="#">
-              <div class="thumbnail">
-                <figure>
-                  <time datetime="2014-01-01">25 Nov, 2014</time><img src="assets/images/news4.jpg" alt="" />
-                </figure>
-                <div class="caption maxheight2">
-                  <div class="box_inner">
-                    Magnis dis parturient montes ascetur ridiculus mus.
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
+      <div class="row" id="noticiasContainer">
+        <!-- Contenido de noticias se generará aquí -->
       </div>
     </div>
   </section>
+  
 
   <footer id="footer">
     <div class="container">
@@ -412,5 +350,35 @@
     });
   </script>
 </body>
+
+
+<!-- Noticias -->
+<script src="noticias.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var container = document.getElementById("noticiasContainer");
+    noticias.forEach(function (noticia) {
+      var html = `
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+          <div class="newsBox">
+            <a href="${noticia.enlace}">
+              <div class="thumbnail">
+                <figure>
+                  <time datetime="${noticia.fecha}">${noticia.fecha}</time>
+                  <img src="${noticia.imagen}" alt="" />
+                </figure>
+                <div class="caption maxheight2">
+                  <div class="box_inner">${noticia.titulo}</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      `;
+      container.innerHTML += html;
+    });
+  });
+</script>
 
 </html>
